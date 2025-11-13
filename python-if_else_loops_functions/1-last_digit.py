@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import random
-
 number = random.randint(-10000, 10000)
 if number < 0:
     nfd = int(str(number)[-1:]) * (-1)
@@ -16,4 +15,3 @@ elif nfd < 6 and nfd != 0:
 else:
     print("Last digit of " + str(number) + " is " + str(nfd) +
           " and is 0")
-
