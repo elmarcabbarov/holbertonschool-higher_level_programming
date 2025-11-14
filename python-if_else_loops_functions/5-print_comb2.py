@@ -5,6 +5,6 @@ for i in range(0,100):
             i="0"+str(i)
         else:
             i=str(i)
-        print(i, end =", ")
+        print(str(i), end =", ")
     elif i == 99:
         print(str(i))
