@@ -1,10 +1,3 @@
 #!/usr/bin/python3
-for i in range(0,100):
-    if i < 99:
-        if i < 10:
-            i="0"+str(i)
-        else:
-            i=str(i)
-        print(str(i), end =", ")
-    elif i == 99:
-        print(str(i))
+for i in range(100):
+    print("{:02d}".format(i), end=", " if i != 99 else "\n")
