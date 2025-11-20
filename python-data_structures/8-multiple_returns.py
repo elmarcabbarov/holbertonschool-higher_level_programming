@@ -1,9 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 def multiple_returns(sentence):
     if sentence == '':
         return None
     else:
-        words = sentence.split()
-        words_tuple = tuple(words)
-        length = len(words_tuple)
-        first = words_tuple[0]
+        chars_tuple = tuple(sentence)
+        length = len(chars_tuple)
+        first = chars_tuple[0]
