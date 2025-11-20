@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    if sentence == '':
-        return None
-    else:
-        chars_tuple = tuple(sentence)
-        length = len(chars_tuple)
-        first = chars_tuple[0]
+    if sentence == "":
+        return (0, None)
+    return (len(sentence), sentence[0])
