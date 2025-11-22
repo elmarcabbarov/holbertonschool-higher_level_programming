@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 def multiply_by_2(a_dictionary):
-    b_dictionary = a_dictionary
+    b_dictionary = {}
+    b_dictionary.update(a_dictionary)
     for key, value in b_dictionary.items():
         v = value * 2
         b_dictionary[key] = v
