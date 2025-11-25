@@ -60,7 +60,7 @@ class Rectangle:
         return "\n".join(rectangle_lines)
 
     def __repr__(self):
-        """return a string representation of the rectangle to be able to recreate a new instance"""
+        """return a string representation of the rectangle to be able to recreate"""
         return "Rectangle({}, {})".format(self.__width, self.__height)
     
     def __eval__(self):
