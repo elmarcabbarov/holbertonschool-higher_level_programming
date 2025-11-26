@@ -79,3 +79,11 @@ class Rectangle:
         Return a representation able to recreate a new instance.
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
+
+    def __del__(self):
+        """
+        Docstring for __del__
+        
+        :param self: Description
+        """
+        print("Bye rectangle...")
