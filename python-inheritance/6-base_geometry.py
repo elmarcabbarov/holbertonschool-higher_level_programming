@@ -13,4 +13,4 @@ class BaseGeometry():
         """
         Exception qaldiririq nesede cixis verir
         """
-        raise Exception("")
+        raise Exception("area() is not implemented")
