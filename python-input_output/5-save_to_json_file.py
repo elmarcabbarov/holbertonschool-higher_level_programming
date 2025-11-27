@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Verilenleri Jsondan text faylina yazir
+Writes an object to a text file using JSON representation
 """
 
 
@@ -9,8 +9,8 @@ import json
 
 def save_to_json_file(my_obj, filename):
     """
-    text fayilina yazan
+    Writes an object to a file in JSON format
     """
-    data = json.dumbs(my_obj)
-    with open(filename, "w") as f:
+    data = json.dumps(my_obj)
+    with open(filename, "w", encoding="utf-8") as f:
         f.write(data)
