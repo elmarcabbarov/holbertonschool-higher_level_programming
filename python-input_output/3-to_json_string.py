@@ -11,5 +11,5 @@ def to_json_string(my_obj):
     """
     Jsona çeviren funksiya
     """
-    json_string = json.dumps(my_obj, ensure_ascii=False, indent=2)
+    json_string = json.dumps(my_obj)
     return json_string
