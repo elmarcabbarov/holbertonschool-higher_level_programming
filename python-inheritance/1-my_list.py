@@ -8,8 +8,9 @@ class MyList(list):
     """
     List miras alir sonra funksiya yaradir
     """
+
     def print_sorted(self):
-        """ 
+        """
         sortlanmis lsit print edir
         """
         print(sorted(self))
