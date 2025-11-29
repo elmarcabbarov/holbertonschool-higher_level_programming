@@ -17,7 +17,7 @@ def convert_csv_to_json(csv_filename):
                 data.append(row)
 
         """CSVnin jsona elave edilmesi"""
-        with open("data.json", "wb", encoding="utf-8") as j:
+        with open("data.json", "w", encoding="utf-8") as j:
             json.dump(data, j)
         return True
 
