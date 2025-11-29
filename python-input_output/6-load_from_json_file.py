@@ -8,5 +8,5 @@ def load_from_json_file(filename):
     """indi deserialize elemek ucun load()
     istifade edecik bir de with open bayaqki"""
 
-    with open(filename, "r", encoding="utf-8")as f:
-        json.load(f)
+    with open(filename, "r", encoding="utf-8") as f:
+        return json.load(f)
