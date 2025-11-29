@@ -18,9 +18,9 @@ class CustomObject():
     """Melumatlarin cap edilmesi"""
 
     def display(self, name, age, is_student):
-        print(f"Name: {self.name}")
-        print(f"Age: {self.age}")
-        print(f"Is Student: {self.is_student}")
+        print(f"Name: {name}")
+        print(f"Age: {age}")
+        print(f"Is Student: {is_student}")
 
     """Serilasiya"""
 
