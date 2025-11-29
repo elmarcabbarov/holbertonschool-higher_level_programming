@@ -15,7 +15,7 @@ class Student():
         if not isinstance(attrs, list):
             return self.__dict__.copy()
         """Listin incindeki her seyin str olub olmadigini yoxlayir"""
-        if not all(isinstance(attrs, str) for attr in attrs):
+        if not all(isinstance(attr, str) for attr in attrs):
             return self.__dict__.copy()
         """Lazim olanlari cap etmekin return eleyirkimi bir sey"""
         result = {}
