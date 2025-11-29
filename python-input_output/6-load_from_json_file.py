@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """jsona object cevirmek kimi bir sey"""
 
 import json
