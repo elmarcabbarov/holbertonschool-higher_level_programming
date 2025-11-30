@@ -1,0 +1,2 @@
+-- Butun sutunlari cap eden
+
