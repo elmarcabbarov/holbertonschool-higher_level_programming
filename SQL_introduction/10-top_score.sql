@@ -1,2 +1,2 @@
 -- Second Tabledeki butun mezmunu cap eden kod 
-SELECT * FROM second_table;
+SELECT score, name FROM second_table ORDER BY scoree DESC;
