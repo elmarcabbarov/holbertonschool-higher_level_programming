@@ -9,4 +9,4 @@ else:
     """URlden header almaq"""
     url = sys.argv[1]
     req = r.get(url)
-    print(req.headers["X-Request-I"])
+    print(req.headers["X-Request-Id"])
