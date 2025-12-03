@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Import etdik"""
-import urllib.request, sys
+import urllib.request
+import sys
 
 """Validation"""
 
@@ -9,8 +10,8 @@ if len(sys.argv) < 2:
 else:
     url = sys.argv[1]
 """Try except"""
-    try:
+   try:
         with urllib.request.urlopen(url) as r:
-           print(r.read().decode("utf-8"))
+            print(r.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
         print("Error code: {}".format(e.code))
