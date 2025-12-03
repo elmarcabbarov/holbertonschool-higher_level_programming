@@ -10,6 +10,6 @@ else:
     """Emailin gonderilmesi"""
     url = sys.argv[1]
     mail = sys.argv[2]
-    data = {"email": email}
+    data = {"email": mail}
     r.post(utl, data=data)
     print(r.text.strip())
