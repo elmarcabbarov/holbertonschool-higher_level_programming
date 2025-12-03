@@ -16,4 +16,4 @@ else:
     byte = urllib.parse.urlencode(mail).encode("utf-8")
     with urllib.request.urlopen(url, data=byte) as r:
         body = r.read()
-    print(body)
+    print(body.decode("utf-8"))
