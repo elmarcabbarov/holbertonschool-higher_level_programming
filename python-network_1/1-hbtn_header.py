@@ -9,4 +9,4 @@ if len(sys.argv) < 2:
 else:
     with urllib.request.urlopen(sys.argv[1]) as r:
         """Hell"""
-        print(req.getheader("X-Request-Id"))
+        print(r.getheader("X-Request-Id"))
