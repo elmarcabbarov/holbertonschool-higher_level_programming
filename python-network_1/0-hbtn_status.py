@@ -3,7 +3,7 @@
 import urllib.request
 
 """URLle isler """
-with urlib.request.urlopen("https://intranet.hbtn.io/status") as response:
+with urllib.request.urlopen("https://intranet.hbtn.io/status") as response:
     data = response.read()
 """Print et"""
 print("Body response:")
