@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Import et"""
+"""Sends a POST request with an email to the given URL."""
+
+
 import requests as r
 import sys
 
@@ -10,6 +12,6 @@ else:
     """Emailin gonderilmesi"""
     url = sys.argv[1]
     mail = sys.argv[2]
-    e = {"email": mail}i
+    e = {"email": mail}
     req = r.post(url, data=e)
     print(req.text.strip())
