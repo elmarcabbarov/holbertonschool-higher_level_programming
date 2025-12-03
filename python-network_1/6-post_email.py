@@ -10,6 +10,6 @@ else:
     """Emailin gonderilmesi"""
     url = sys.argv[1]
     mail = sys.argv[2]
-    data = {"email": mail}
-    req = r.post(url, data=data)
+    e = {"email": mail}i
+    req = r.post(url, data=e)
     print(req.text.strip())
