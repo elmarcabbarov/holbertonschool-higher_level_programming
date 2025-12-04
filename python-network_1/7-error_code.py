@@ -10,7 +10,7 @@ if len(sys.argv) < 2:
 else:
     url = sys.argv[1]
     req = r.get(url)
-    if r.status_code >= 400:
-        print("Error code: {}".format(r.status_code))
+    if req.status_code >= 400:
+        print("Error code: {}".format(req.status_code))
     else:
-        print(r.text)
+        print(req.text)
