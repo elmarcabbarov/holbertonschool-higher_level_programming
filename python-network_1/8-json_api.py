@@ -5,10 +5,10 @@
 import requests as r
 import sys
 
-if len(sys.argv) < 1:
-    q = ""
-else:
+if len(sys.argv) > 1:
     q = sys.argv[1]
+else:
+    q = ""
 
 url = "http://0.0.0.0:5000/search_user"
 data = {"q": q}
