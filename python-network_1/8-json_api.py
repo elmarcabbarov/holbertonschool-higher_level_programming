@@ -19,6 +19,6 @@ try:
     if not data:
         print("No result")
     else:
-        print(f"{data{'id'}} {data{'name'}}")
+        print(f"[{data['id']}] {data['name']}")
 except ValueError:
     print("Not a valid JSON")
