@@ -11,8 +11,8 @@ else:
     q = ""
 
 url = "http://0.0.0.0:5000/search_user"
-data = {"q": q}
-req = r.post(url, data=data)
+nermin = {"q": q}
+req = r.post(url, data=nermin)
 
 try:
     data = req.json()
