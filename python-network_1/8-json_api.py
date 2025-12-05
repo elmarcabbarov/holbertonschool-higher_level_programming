@@ -15,7 +15,7 @@ data = {"q": q}
 req = r.post(url, data=data)
 
 try:
-    data.json()
+    data = req.json()
     if not data:
         print("No result")
     else:
