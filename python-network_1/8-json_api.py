@@ -2,23 +2,22 @@
 """Post gondermek requests kitabxanasi ile"""
 
 
-import requests as r
-import sys
+import requests as r, sys
 
-if len(sys.argv) > 1:
-    q = sys.argv[1]
+if len(sys.argv) < 1:
+    q =""
 else:
-    q = ""
-
-url = "http://0.0.0.0:5000/search_user"
-nermin = {"q": q}
-req = r.post(url, data=nermin)
-
-try:
-    data = req.json()
+    
+    url = "http://0.0.0.0:5000/search_user"
+    q = sys.argv[1]
+    data = {"q": q}
+    res = r.post(url, data=data)
+    try:
+        data = r.json()
+    except ValueError:
+        print("Not a valid JSON")
     if not data:
         print("No result")
     else:
-        print(f"[{data['id']}] {data['name']}")
-except ValueError:
-    print("Not a valid JSON")
+        print(f"{data["id"]} {data["name"]}")
+
