@@ -1,27 +1,22 @@
 #!/usr/bin/python3
-"""Send POST request to search_user with letter in q variable"""
-
+"""Json requests"""
 import requests
 import sys
 
-# 1. URL
-url = "http://0.0.0.0:5000/search_user"
-
-# 2. q dəyəri
-if len(sys.argv) > 1:
-    q = sys.argv[1]
+if len(sys.argv) < 2:
+    q = ''
+    print("No result")
 else:
-    q = ""
-
-# 3. POST sorğusu
-response = requests.post(url, data={'q': q})
-
-# 4. JSON emalı
-try:
-    data = response.json()
-    if not data:
-        print("No result")
+    q = sys.argv[1]
+    try:
+        response = requests.post(
+            "http://0.0.0.0:5000/search_user",
+            data={
+                'q': q})
+        r = response.json()
+    except ValueError:
+        print("Not a valid JSON")
+    if r:
+        print(f"[{r.get('id')}] {r.get('name')}")
     else:
-        print(f"[{data['id']}] {data['name']}")
-except ValueError:
-    print("Not a valid JSON")
+        print("No result")
